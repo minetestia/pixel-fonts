@@ -30,9 +30,11 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
 end)
 
 local function openFontFormspec(player_name)
-  local formspec = "size[6,4]"
-    .. "button[2,2;2,1;install;Install fonts]"
-    .. "button[2,3;2,1;uninstall;Uninstall fonts]"
+  local formspec = [[
+    size[4,3]
+    button[0.5,0.5;3,1;install;Install fonts]
+    button[0.5,1.5;3,1;uninstall;Uninstall fonts]
+  ]]
   minetest.show_formspec(player_name, "pixel_fonts", formspec)
 end
 
