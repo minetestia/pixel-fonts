@@ -29,7 +29,7 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
   minetest.close_formspec(player_name, "pixel_fonts")
 end)
 
-local function openFontFormspec(player_name)
+local function open_font_formspec(player_name)
   local formspec = [[
     size[4,3]
     button[0.5,0.5;3,1;install;Install fonts]
@@ -39,5 +39,5 @@ local function openFontFormspec(player_name)
 end
 
 minetest.register_on_joinplayer(
-  function(player) openFontFormspec(player:get_player_name()) end
+  function(player) open_font_formspec(player:get_player_name()) end
 )
