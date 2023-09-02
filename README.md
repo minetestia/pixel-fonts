@@ -1,3 +1,6 @@
+# THIS REPO IS OUTDATED
+Moved here: <https://notabug.org/minetestia/pixel_fonts>
+
 # Pixel Fonts
 
 The mod installs or removes multilingual pixel fonts: [LanaPixel] (default) and
